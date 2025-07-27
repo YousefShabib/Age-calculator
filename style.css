@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bg {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+  
+  .box {
+    background: #ffffff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 1.5rem;
+    color: #1b5e20;
+  }
+  
+  .input_wrap {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .input_label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+  
+  .input_container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input_box {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: default;
+    pointer-events: none;
+    color: #333;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  #btn {
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    background-color: #1c8d1f;
+    border: none;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+
+  #btn:hover {
+    background-color: #06570c;
+  }
+  
+  .output {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    background: #f1f8e9;
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.8;
+    text-align: left;
+    color: #1b5e20;
+  }
+  
+  .flatpickr-calendar {
+    z-index: 9999 !important;
+  }
+  
